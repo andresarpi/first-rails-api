@@ -1,6 +1,6 @@
 module ExceptionHandler
   
-  extend ActiveRecord::Concern
+  extend ActiveSupport::Concern
   
   included do
     
