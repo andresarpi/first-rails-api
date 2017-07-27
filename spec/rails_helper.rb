@@ -22,7 +22,7 @@ Shoulda::Matchers.configure do |config|
 end
 
 # [...]
-RSpec.configuration do |config|
+RSpec.configure do |config|
   # [...]
   # add `FactoryGirl` methods
   config.include FactoryGirl::Syntax::Methods
