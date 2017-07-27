@@ -13,6 +13,7 @@ Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
 
 # [...]
+Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 # configure shoulda matchers to use rspec as the test framework and full matcher libraries for rails
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
@@ -42,4 +43,5 @@ RSpec.configure do |config|
     end
   end
   # [...]
+  config.include RequestSpecHelper, type: :request
 end

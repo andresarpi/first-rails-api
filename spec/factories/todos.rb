@@ -1,5 +1,3 @@
-# spec/factories/todos.rb
-
 FactoryGirl.define do
   factory :todo do
     title { Faker::Lorem.word }
